@@ -3,7 +3,7 @@ import { BsClipboardData, BsBriefcase } from 'react-icons/bs'
 import { Link } from 'react-scroll'
 
 const navLinks = [
-  { to: 'home', Icon: BiHomeAlt },
+  { to: 'home', offset: -400, Icon: BiHomeAlt },
   { to: 'services', Icon: BiUser },
   { to: 'about', Icon: BsClipboardData },
   { to: 'contact', Icon: BsBriefcase },
