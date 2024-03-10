@@ -3,7 +3,7 @@ import Banner from './components/Banner'
 import Nav from './components/Nav'
 import About from './components/About'
 import Services from './components/Services'
-import Work from './components/work'
+import Work from './components/Work'
 import Contact from './components/Contact'
 import Footer from './components/footer'
 
