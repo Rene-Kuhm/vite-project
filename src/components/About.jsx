@@ -31,11 +31,8 @@ const About = () => {
             <h3 className='h3 mb-4'>
               Soy un Desarrollador FullStack con 3 años de experiencia.
             </h3>
-            <p className='mb-6'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              quisquam praesentium sint, expedita quidem reiciendis aperiam ad
-              laboriosam commodi unde odit cum nobis magni ex vitae rem esse
-              cumque molestiae.
+            <p className='mb-6 text-2xl'>
+            Soy un Desarrollador Full Stack apasionado por transformar ideas en soluciones digitales impactantes, especializado en JavaScript, React, Node.js, y SQL. Mi experiencia abarca desde el diseño de interfaces hasta la implementación de sistemas complejos, siempre con el objetivo de mejorar la experiencia del usuario y alcanzar metas comerciales. Me motiva el aprendizaje continuo y la innovación tecnológica, buscando constantemente desafíos que impulsan mi crecimiento profesional.
             </p>
             {/* stats  */}
             <div className='flex gap-x-6 lg:gap-x-10 mb-12'>

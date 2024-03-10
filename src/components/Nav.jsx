@@ -6,6 +6,7 @@ const navLinks = [
   { to: 'home', offset: -400, Icon: BiHomeAlt },
   { to: 'about', Icon: BsClipboardData },
   { to: 'services', Icon: BiUser },
+  { to: 'work', Icon: BsClipboardData },
   { to: 'contact', Icon: BsBriefcase },
 ]
 

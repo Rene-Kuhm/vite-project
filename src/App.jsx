@@ -3,6 +3,7 @@ import Banner from './components/Banner'
 import Nav from './components/Nav'
 import About from './components/About'
 import Services from './components/Services'
+import Work from './components/work'
 import Contact from './components/Contact'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Nav />
       <About />
       <Services />
+      <Work />
       <Contact />
       <div className='h-[4000px]'></div>
     </div>
