@@ -4,8 +4,8 @@ import { Link } from 'react-scroll'
 
 const navLinks = [
   { to: 'home', offset: -400, Icon: BiHomeAlt },
-  { to: 'services', Icon: BiUser },
   { to: 'about', Icon: BsClipboardData },
+  { to: 'services', Icon: BiUser },
   { to: 'contact', Icon: BsBriefcase },
 ]
 

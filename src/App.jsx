@@ -9,10 +9,10 @@ function App() {
   return (
     <div className='bg-site bg-no-repeat bg-cover overflow-hidden'>
       <Header />
-      <Nav />
       <Banner />
-      <Services />
+      <Nav />
       <About />
+      <Services />
       <Contact />
       <div className='h-[4000px]'></div>
     </div>
