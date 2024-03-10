@@ -48,7 +48,7 @@ const Services = () => {
             <h3 className='h3 max-w-[455px] mb-16'>
               Soy un Desarrollador FullStack con 3 años de experiencia.
             </h3>
-            <button className='btn btn-sm'>Ver Mis Trabajos</button>
+            <a className='btn btn-sm text-lg p-4' href='https://github.com/Rene-Kuhm' >Ver Mis Trabajos</a>
           </motion.div>
           {/* services */}
           <motion.div

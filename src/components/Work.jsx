@@ -24,7 +24,7 @@ const Work = () => {
               <p className='max-w-sm mb-16'>
               Explora nuestra selección de proyectos destacados, que demuestran nuestra dedicación a la innovación y calidad en el desarrollo web.
               </p>
-              <button className='btn btn-sm'>Ver Todos los Projectos</button>
+              <a href='https://github.com/Rene-Kuhm' className='btn btn-sm text-lg p-4'>Ver Todos los Projectos</a >
             </div>
             {/* imagen */}
             <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>

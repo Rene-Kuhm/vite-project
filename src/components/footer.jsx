@@ -15,9 +15,9 @@ const Footer = () => {
           <p className='mb-6 text-sm lg:text-base'>Síguenos en nuestras redes sociales y mantente actualizado.</p>
           {/* Redes sociales o información de contacto aquí */}
           <div className='flex gap-4'>
-            <a href='#' className='text-accent'>Facebook</a>
-            <a href='#' className='text-accent'>Twitter</a>
-            <a href='#' className='text-accent'>LinkedIn</a>
+            <a href='https://www.facebook.com/kuhm.rene/' className='text-accent'>Facebook</a>
+            <a href='https://twitter.com/REPARO22' className='text-accent'>Twitter</a>
+            <a href='https://github.com/Rene-Kuhm' className='text-accent'>Github</a>
           </div>
         </motion.div>
         <motion.div
