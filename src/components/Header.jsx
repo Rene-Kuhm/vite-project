@@ -1,5 +1,5 @@
 // imagenes
-import Logo from '../assets/logo.svg'
+
 
 const Header = () => {
   return (
@@ -8,7 +8,7 @@ const Header = () => {
         <div className='flex justify-between items-center'>
           {/* Logo */}
           <a href='#'>
-            <img src={Logo} alt='' />
+            <p className='text-gradient text-2xl md:text-5xl lg:text-5xl xl:text-5xl font-bold '>Tecnodespegue</p>
           </a>
           {/* BUTTON */}
           <button className='btn btn-sm'>Contactame</button>
