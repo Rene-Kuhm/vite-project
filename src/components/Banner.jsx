@@ -43,7 +43,7 @@ const Banner = () => {
                   2000,
                 ]}
                 speed={50}
-                className='text-accent'
+                className=' text-gradient'
                 wrapper='span'
                 repeat={Infinity}
               />
@@ -53,9 +53,9 @@ const Banner = () => {
               initial='hidden'
               whileInView={'show'}
               viewport={{ once: false, amount: 0.7 }}
-              className='mb-8 max-w-lg mx-auto lg:mx-0'
+              className='mb-8 max-w-lg text-2xl mx-auto lg:mx-0'
             >
-               En <strong>Tecnodespegue</strong>, creemos en el poder de la tecnología para cambiar el mundo. Con un enfoque personalizado y las últimas tendencias en desarrollo web, te ayudamos a llevar tu negocio al siguiente nivel. Descubre cómo podemos transformar tu idea en una solución digital que destaque.
+               En <strong className='text-gradient'>Tecnodespegue</strong>, creemos en el poder de la tecnología para cambiar el mundo. Con un enfoque personalizado y las últimas tendencias en desarrollo web, te ayudamos a llevar tu negocio al siguiente nivel. Descubre cómo podemos transformar tu idea en una solución digital que destaque.
 
             </motion.p>
             <motion.div
