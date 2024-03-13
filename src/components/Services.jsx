@@ -29,8 +29,8 @@ const services = [
 ];
 
 const Services = () => {
-  const { ref: refRight, inView: inViewRight } = useInView({ threshold: 0.5, triggerOnce: false });
-  const { ref: refLeft, inView: inViewLeft } = useInView({ threshold: 0.5, triggerOnce: false });
+  const { ref: refRight, inView: inViewRight } = useInView({ threshold: 0.3, triggerOnce: false });
+  const { ref: refLeft, inView: inViewLeft } = useInView({ threshold: 0.3, triggerOnce: false });
 
   return (
     <section className='section' id='services'>
