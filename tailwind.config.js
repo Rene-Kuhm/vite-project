@@ -71,10 +71,10 @@ module.exports = {
         },
       },
       animation: {
-        'fade-in-up': 'fadeInUp 1s ease-out forwards',
+        'fade-in-up': 'fadeInUp 0.5s ease-out forwards',
         'fade-in-down': 'fadeInDown 0.5s ease-out forwards',
-        'fade-in-right': 'fadeInRight 1.5s ease-out forwards',
-        'fade-in-left': 'fadeInLeft 1.5s ease-out forwards',
+        'fade-in-right': 'fadeInRight 0.5s ease-out forwards',
+        'fade-in-left': 'fadeInLeft 0.5s ease-out forwards',
       },
     },
   },
