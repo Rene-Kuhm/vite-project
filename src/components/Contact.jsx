@@ -1,12 +1,13 @@
 import { useRef, useState } from 'react';
-import { motion } from 'framer-motion';
-import { fadeIn } from '../variants';
+import { useInView } from 'react-intersection-observer';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const formRef = useRef();
   const [alertMsg, setAlertMsg] = useState('');
   const [showAlert, setShowAlert] = useState(false);
+  const { ref: refLeft, inView: inViewLeft } = useInView({ threshold: 0.3, triggerOnce: true });
+  
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -48,48 +49,36 @@ const Contact = () => {
           </div>
         )}
         <div className='flex flex-col lg:flex-row '>
-          <motion.div
-            variants={fadeIn('right', 0.2)}
-            initial='hidden'
-            whileInView={'show'}
-            viewport={{ once: false, amount: 0.3 }}
-            className='flex-1 flex justify-start items-center'>
-              <div>
-                <h4 className='text-xl uppercase text-accent font-medium mb-2 tracking-wide'>
-                  Ponte en Contacto
-                </h4>
-                <h2 className='text-[45px] lg:text-[90px] leading-none mb-12'>
-                  Vamos a <br /> Trabajar juntos!
-                </h2>
-              </div>
-          </motion.div>
-          <motion.form
-            ref={formRef}
-            onSubmit={sendEmail}
-            variants={fadeIn('left', 0.2)}
-            initial='hidden'
-            whileInView={'show'}
-            viewport={{ once: false, amount: 0.3 }}
-            className='flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start'>
-              <input
-                className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all'
-                type='text'
-                placeholder='Ingrese su Nombre'
-                name="name"
-              />
-              <input
-                className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all'
-                type='email'
-                placeholder='Ingrese su Correo'
-                name="email"
-              />
-              <textarea
-                className='bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-12'
-                placeholder='Ingrese su Mensaje'
-                name="message"
-              ></textarea>
-              <button type="submit" className='btn btn-lg'>Enviar Mensaje</button>
-          </motion.form>
+          <div ref={refLeft} className={`flex-1 flex justify-start items-center ${inViewLeft ? 'animate-fade-in-left' : ''}`}>
+            <div>
+              <h4 className='text-xl uppercase text-accent font-medium mb-2 tracking-wide'>
+                Ponte en Contacto
+              </h4>
+              <h2 className='text-[45px] lg:text-[90px] leading-none mb-12'>
+                Vamos a <br /> Trabajar juntos!
+              </h2>
+            </div>
+          </div>
+          <form ref={formRef} onSubmit={sendEmail} className={`flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start `}>
+            <input
+              className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all'
+              type='text'
+              placeholder='Ingrese su Nombre'
+              name="name"
+            />
+            <input
+              className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all'
+              type='email'
+              placeholder='Ingrese su Correo'
+              name="email"
+            />
+            <textarea
+              className='bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-12'
+              placeholder='Ingrese su Mensaje'
+              name="message"
+            ></textarea>
+            <button type="submit" className='btn btn-lg'>Enviar Mensaje</button>
+          </form>
         </div>
       </div>
     </section>
