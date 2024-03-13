@@ -29,14 +29,13 @@ const services = [
 ];
 
 const Services = () => {
-  const { ref: refRight, inView: inViewRight } = useInView({ threshold: 0.5, triggerOnce: false});
+  const { ref: refRight, inView: inViewRight } = useInView({ threshold: 0.5, triggerOnce: false });
   const { ref: refLeft, inView: inViewLeft } = useInView({ threshold: 0.5, triggerOnce: false });
 
   return (
     <section className='section' id='services'>
       <div className='container mx-auto'>
         <div className='flex flex-col lg:flex-row'>
-          {/* Text and image section */}
           <div ref={refRight} className={`flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0 ${inViewRight ? 'animate-fade-in-left' : ''}`}>
             <h2 className='h2 text-accent mb-6'>
               Mi Oferta: Soluciones Innovadoras en Desarrollo
@@ -46,32 +45,28 @@ const Services = () => {
             </h3>
             <a className='btn btn-sm text-lg p-4' href='https://github.com/Rene-Kuhm'>Ver Mis Trabajos</a>
           </div>
-          {/* Services list */}
           <div ref={refLeft} className={`flex-1 ${inViewLeft ? 'animate-fade-in-right' : ''}`}>
             <div>
-              {services.map((service, index) => {
-                const { name, description, link } = service;
-                return (
-                  <div className='border-b border-white/20 h-[146px] mb-[36px] flex' key={index}>
-                    <div className='max-w-[476px]'>
-                      <h4 className='text-[20px] tracking-wider font-primary font-semibold mb-6'>
-                        {name}
-                      </h4>
-                      <p className='font-secondary leading-tight'>
-                        {description}
-                      </p>
-                    </div>
-                    <div className='flex flex-col flex-1 items-end'>
-                      <a href='#' className='btn w-9 h-9 mb-[42px] flex justify-center items-center'>
-                        <BsArrowUpRight />
-                      </a>
-                      <a href='#' className='text-gradient text-sm'>
-                        {link}
-                      </a>
-                    </div>
+              {services.map((service, index) => (
+                <div className='border-b border-white/20 h-[146px] mb-[36px] flex' key={index}>
+                  <div className='max-w-[476px]'>
+                    <h4 className='text-[20px] tracking-wider font-primary font-semibold mb-6'>
+                      {name}
+                    </h4>
+                    <p className='font-secondary leading-tight'>
+                      {service.description}
+                    </p>
                   </div>
-                );
-              })}
+                  <div className='flex flex-col flex-1 items-end'>
+                    <a href='#' className='btn w-9 h-9 mb-[42px] flex justify-center items-center'>
+                      <BsArrowUpRight />
+                    </a>
+                    <a href='#' className='text-gradient text-sm'>
+                      {service.link}
+                    </a>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
