@@ -4,8 +4,8 @@ import Img2 from '../assets/portfolio-img2.png';
 import Img3 from '../assets/portfolio-img3.png';
 
 const Work = () => {
-  const { ref: refRight, inView: inViewRight } = useInView({ threshold: 0.3, triggerOnce: false });
-  const { ref: refLeft, inView: inViewLeft } = useInView({ threshold: 0.3, triggerOnce: false });
+  const { ref: refRight, inView: inViewRight } = useInView({ threshold: 0.3, triggerOnce: true });
+  const { ref: refLeft, inView: inViewLeft } = useInView({ threshold: 0.3, triggerOnce: true });
 
   return (
     <section className='section' id='work'>
