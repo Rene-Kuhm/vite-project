@@ -17,7 +17,7 @@ const Banner = () => {
             <h1 className='text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[0.8] lg:leading-none'>
               Soluciones Web <span>Innovadoras</span>
             </h1>
-            <div className='mb-8 p-3 font-secondary font-semibold uppercase leading-[1]' style={{minHeight: '100px'}}>
+            <div className='mb-8 p-3 font-secondary font-semibold uppercase leading-[1]' style={{minHeight: '110px'}}>
               <span className='text-white mr-4'>Transformando ideas en</span>
               <TypeAnimation
                 sequence={[
