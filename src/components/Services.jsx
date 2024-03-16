@@ -6,25 +6,25 @@ const services = [
     name: 'UI/UX Design',
     description:
       'UI/UX Design se centra en la creación de interfaces atractivas y experiencias de usuario intuitivas, asegurando que cada aspecto visual y de interacción funcione armoniosamente para ofrecer una navegación fluida y satisfacer las necesidades del usuario final.',
-    link: 'Leer más',
+    link: '',
   },
   {
     name: 'Development',
     description:
       'Development engloba el proceso técnico de construcción y mantenimiento de software, abarcando desde el desarrollo de aplicaciones web y móviles hasta sistemas complejos, con el objetivo de convertir ideas en soluciones funcionales y eficientes.',
-    link: 'Leer más',
+    link: '',
   },
   {
     name: 'Digital Marketing',
     description:
       'Digital Marketing optimiza la presencia en línea mediante publicidad y contenido para impulsar la visibilidad y el engagement, fomentando el crecimiento comercial.',
-    link: 'Leer más',
+    link: '',
   },
   {
     name: 'Product Branding',
     description:
       'Product Branding fortalece la identidad de un producto, creando una conexión distintiva y duradera con los consumidores a través de elementos visuales, narrativas y valores de marca.',
-    link: 'Leer más',
+    link: '',
   },
 ]
 

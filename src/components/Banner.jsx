@@ -1,10 +1,10 @@
+import PropTypes from 'prop-types';
 import { FaYoutube, FaGithub, FaTwitter } from 'react-icons/fa'
 import Image from '../assets/avatar.svg'
 import { TypeAnimation } from 'react-type-animation'
 import { useInView } from 'react-intersection-observer'
 
-
-const Banner = () => {
+const Banner = ({ setSection }) => {
   const { ref, inView } = useInView({
     threshold: 0.1, // Ajustado para una mejor detección de la entrada en viewport
     triggerOnce: true, // Evita repetir la animación, mejorando la experiencia de usuario
@@ -56,10 +56,16 @@ const Banner = () => {
               podemos transformar tu idea en una solución digital que destaque.
             </p>
             <div className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
-              <button className='btn btn-lg'>contactame</button>
-              <a href='#' className='text-gradient btn-link'>
-                My Porfolio
-              </a>
+              <a
+            href='#my-portfolio' // Cambia el href para prevenir la recarga de la página
+            onClick={(e) => {
+              e.preventDefault(); // Previene el comportamiento por defecto del enlace
+              setSection('my-portfolio'); // Actualiza el estado para mostrar la sección de portafolio
+            }}
+            className='text-gradient btn-link'
+          >
+           <button className='btn btn-lg'>Mi Portafolio</button> 
+          </a>
             </div>
             <div className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
               <a href='#'>
@@ -84,6 +90,9 @@ const Banner = () => {
       </div>
     </section>
   )
+}
+Banner.propTypes = {
+  setSection: PropTypes.func.isRequired,
 }
 
 export default Banner

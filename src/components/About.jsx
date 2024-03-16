@@ -1,7 +1,7 @@
-
+import PropTypes from 'prop-types';
 import { useInView } from 'react-intersection-observer';
 
-const About = () => {
+const About = ({ setSection }) => {
   const { ref, inView } = useInView({
     threshold: 0.5,
     triggerOnce: true,
@@ -29,13 +29,22 @@ const About = () => {
               {/* ... */}
             </div>
             <div className='flex gap-x-8 items-center'>
-              <a href='https://github.com/Rene-Kuhm' className='btn btn-sm text-lg p-4'>My Porfolio</a>
+            <a
+            href='#my-portfolio' // Cambia el href para prevenir la recarga de la página
+            onClick={(e) => {
+              e.preventDefault(); 
+              setSection('my-portfolio'); 
+            }} className=' text-lg p-4'><button className='btn btn-lg'>My Porfolio</button></a>
             </div>
           </div>
         </div>
       </div>
     </div>
   )
+}
+
+About.propTypes = {
+  setSection: PropTypes.func.isRequired,
 }
 
 export default About;
