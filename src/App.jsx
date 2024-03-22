@@ -6,9 +6,10 @@ import About from './components/About';
 import Services from './components/Services';
 import Work from './components/Work';
 import Contact from './components/Contact';
-import Footer from './components/footer';
+import Footer from './components/Footer';
 // MyPorfolio se ha eliminado de la importación aquí ya que usaremos UnderConstruction en su lugar
 import UnderConstruction from './components/UnderConstruction';
+
  // Asegúrate de importar tu página 404 aquí
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Contact />
           </>
         );
+       
       case 'my-portfolio': // Asegúrate de que el caso coincide con el identificador usado en tus enlaces
         return <UnderConstruction setSection={setSection}/>;
       case 'about':
