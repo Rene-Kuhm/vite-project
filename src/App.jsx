@@ -6,7 +6,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Work from './components/Work';
 import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Footer from './components/footer';
 // MyPorfolio se ha eliminado de la importación aquí ya que usaremos UnderConstruction en su lugar
 import UnderConstruction from './components/UnderConstruction';
 
