@@ -4,9 +4,9 @@ import Contact from './Contact.jsx';
 const Header = () => {
   const [page, setPage] = useState('home');
 
-  const handleButtonClick = () => {
+  {/*const handleButtonClick = () => {
     setPage('contact');
-  };
+  };*/}
 
   const renderContent = () => {
     if (page === 'home') {
@@ -15,17 +15,17 @@ const Header = () => {
           <div className='container mx-auto'>
             <div className='flex justify-between items-center'>
               <a href='#'>
-                <p className='text-gradient text-2xl md:text-5xl lg:text-5xl xl:text-5xl font-bold'>
+                <p className='text-gradient text-2xl md:text-5xl  lg:text-5xl xl:text-5xl font-bold '>
                   Tecnodespegue
                 </p>
               </a>
-              <button className="btn btn-sm" onClick={handleButtonClick}>Contactame</button>
+{/*<button className="btn btn-sm" onClick={handleButtonClick}>Contactame</button>*/}
             </div>
           </div>
         </header>
       );
     } else if (page === 'contact') {
-      return <Contact />;
+    return <Contact />;
     }
   };
 
