@@ -12,7 +12,7 @@ const About = () => {
       <div className='container mx-auto'>
         <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
           {/* img */}
-          <div className={`flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top ${inView ? 'animate-fade-in-left' : ''}`}>
+          <div className={`flex-1 bg-about md:bg-cover bg-no-repeat h-[640px] mix-blend-lighten bg-top ${inView ? 'animate-fade-in-left' : ''}`}>
           </div>
           {/* text */}
           <div className={`flex-1 ${inView ? 'animate-fade-in-right' : ''}`}>
