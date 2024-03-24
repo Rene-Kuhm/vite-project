@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import  { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Banner from './components/Banner';
 import Nav from './components/Nav';
@@ -14,6 +14,20 @@ import UnderConstruction from './components/UnderConstruction';
 
 function App() {
   const [section, setSection] = useState('home');
+
+  useEffect(() => {
+    switch (section) {
+      case 'home':
+        document.title = 'Inicio - Tecnodespegue';
+        break;
+      case 'my-portfolio':
+        document.title = 'Mi Portafolio - Tecnodespegue';
+        break;
+      // Añade más casos según sea necesario
+      default:
+        document.title = 'Tecnodespegue';
+    }
+  }, [section]);
 
   // Función para determinar qué componente se debe renderizar
   const renderSection = () => {
