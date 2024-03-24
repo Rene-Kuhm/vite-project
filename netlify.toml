@@ -1,0 +1,21 @@
+[build]
+# construir
+publish = "dist"
+command = "pnpm run build"
+
+# configuracion de entrono
+[build.environment]
+NODE_VERSION = "18"
+
+# Redirecciones y reescrituras
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = "200"
+
+# Encabezado
+[[headers]]
+for = "/index.html"
+[headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
