@@ -20,7 +20,7 @@ const Work = () => {
               <p className='max-w-sm mb-16'>
               Explora nuestra selección de proyectos destacados, que demuestran nuestra dedicación a la innovación y calidad en el desarrollo web.
               </p>
-              <a href='https://github.com/Rene-Kuhm' className='btn btn-sm text-lg p-4'>Ver Todos los Projectos</a>
+              <a href='https://github.com/Rene-Kuhm' className='btn btn-sm text-lg p-4'>Ver Todos los Proyectos</a>
             </div>
             <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
               <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
@@ -29,7 +29,7 @@ const Work = () => {
                 <span className='text-gradient'>UI/UX Design</span>
               </div>
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>Projecto Titulo</span>
+                <span className='text-3xl text-white'>Proyecto Titulo</span>
               </div>
             </div>
           </div>
@@ -41,7 +41,7 @@ const Work = () => {
                 <span className='text-gradient'>UI/UX Design</span>
               </div>
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>Projecto Titulo</span>
+                <span className='text-3xl text-white'>Proyecto Titulo</span>
               </div>
             </div>
             <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
@@ -51,7 +51,7 @@ const Work = () => {
                 <span className='text-gradient'>UI/UX Design</span>
               </div>
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>Projecto Titulo</span>
+                <span className='text-3xl text-white'>Proyecto Titulo</span>
               </div>
             </div>
           </div>
