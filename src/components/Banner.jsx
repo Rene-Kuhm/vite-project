@@ -57,7 +57,7 @@ const Banner = ({ setSection }) => {
             </p>
             <div className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
               <a
-            href='#my-portfolio' // Cambia el href para prevenir la recarga de la página
+            href='https://steady-entremet-c3571b.netlify.app' // Cambia el href para prevenir la recarga de la página
             onClick={(e) => {
               e.preventDefault(); // Previene el comportamiento por defecto del enlace
               setSection('my-portfolio'); // Actualiza el estado para mostrar la sección de portafolio
